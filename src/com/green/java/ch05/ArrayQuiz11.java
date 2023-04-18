@@ -17,7 +17,7 @@ public class ArrayQuiz11 {
             sum += numArr[i];
         }
         avg = (double) sum / numArr.length;
-        System.out.printf("Avg : %.2f", avg);
+        System.out.printf("Avg : %.2f", avg); // 천의 자리를 표현하고 싶을때는 %,O을 해주면 된다.
 
 
  /*       for (int i = 0; i < numArr.length; i++) {
