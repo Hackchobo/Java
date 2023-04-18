@@ -16,13 +16,14 @@ import java.util.Arrays;
 
 public class ArrayEx19 {
     public static void main(String[] args) {
-        String[] titles ={ "국어", "영어", "수학"};
+        String[] titles ={ "국어", "영어", "수학" };
 
         int [] [] score = {
                 {100, 90, 80},  //국어
                 {20, 20, 20},
                 {30, 30, 30},
                 {40, 40, 40}
+
         };
         System.out.println("번호 국어 영어 수학 총점 평균");
         System.out.println("=========================================");
@@ -36,8 +37,7 @@ public class ArrayEx19 {
                 avg = sum/score[i].length;
                 System.out.printf("%3d\t",score[i][j]);
             }
-            System.out.printf("%d\t",sum);
-            System.out.println(avg);
+            System.out.printf("%2d\t %.2f\n",sum,avg);
 
         }
 //        System.out.println(sum);
@@ -51,12 +51,11 @@ public class ArrayEx19 {
         }*/
         System.out.println("=========================================");
         System.out.println("총점");
-        for (int i = 0; i < titles.length; i++) {
+        for (int i = 0; i < score.length; i++) {
             int sum =0;
-            System.out.print(titles[i]);
-            for (int j = 0; j <titles.length+1 ; j++) {
+            for (int j = 0; j < score[i].length; j++) {
                 sum += score[j][i];
-            }System.out.printf("%d\n",sum);
+            }System.out.printf("%s, %d\n",titles[i],sum);
 
             /*for (int j = 0; j < i; j++) {
                 System.out.println(score[i][j]+score[i][j]+score[i][j]);
