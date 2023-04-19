@@ -16,7 +16,6 @@ public class ArrayEx19_2 {
     public static void main(String[] args) {
         String[] titles ={ "국어", "영어", "수학"};
 
-        int sum2 = 0;
         int sum = 0;
         double avg = 0;
         int [] [] score = {
