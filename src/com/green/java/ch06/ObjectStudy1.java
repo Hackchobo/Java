@@ -14,8 +14,8 @@ public class ObjectStudy1 {
         //객체안에 존재하면 메소드
         //객체밖에 존재하면 함수
 
-        //stack (FILO)
-        //Heap (FIFO)
+        //stack (FILO) First In Last Out
+        //Heap (FIFO) First IN Fitst Out
 
     }
 }

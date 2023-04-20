@@ -11,7 +11,7 @@ public class FlowEx13Method {
         // 2~3 sum =5
     }
 
-    public static void printAllSum(int min, int max){
+    public static void printAllSum(int min, int max){ // static을 붙이면 바로 호출이 가능하다. 같은클래스안에서 호출가능해진다.
 
         int sum = 0;
         for (int i = min; i <= max; i++) {

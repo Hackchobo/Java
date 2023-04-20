@@ -14,8 +14,8 @@ public class ObjectPrint {
 
 class ValueBox {
     int num;
-
+@Override
     public String toString() {  // 오버라이딩을 하면 원래의 채널값이 나온다.
         return "num : " + num;
-    }
+    } // return String.valueOf(num);
 }
