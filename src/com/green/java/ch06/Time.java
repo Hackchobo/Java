@@ -5,6 +5,8 @@ public class Time {
     private int minute;         // class 안에 있는것은 전역 변수
     private int second;         // 멤버필드갯수에따라 저장할수있는 정수값 수가 달라진다.
 
+    // 프라이빗 값생성자를 통해서 값을 넣을수있다. 2.s
+    public  void test() {int gg = 10;}
     public int getHour() {
         return hour;
     }

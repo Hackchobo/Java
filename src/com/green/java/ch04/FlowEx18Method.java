@@ -10,13 +10,13 @@ public class FlowEx18Method {
         ..
         4 X 9 = 36 (개행)
          */
-
+        //arguments 아규먼츠, 인수
         gugudan(2, 8); // 단이 바뀌면 개행 한번더
         gugudan(5, 7); // 단이 바뀌면 개행 한번더
 
     }
 
-    public static void gugudan(int sDan, int eDan){
+    public static void gugudan(int sDan, int eDan){ // 인자, 파라미터, 매개변수
         for (int i = sDan; i <=eDan ; i++) {
             gugudan(i);
             /*for (int j = 1; j < 10 ; j++) {
