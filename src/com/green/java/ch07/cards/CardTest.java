@@ -2,7 +2,7 @@ package com.green.java.ch07.cards;
 
 public class CardTest {
     public static void main(String[] args) {
-        CardDeck cd = new CardDeck();
+        CardDeck cd = new CardDeck(); // 이것만 생성해도 % 를 실행할수 있다.
        // cd.openCards();
 
         System.out.println("----------------------------");
