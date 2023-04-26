@@ -1,6 +1,6 @@
 package com.green.java.ch07;
 /*
-    private 멤버필드에 값을 대입하고 추출.
+    private 멤버필드에 값을 대입하고 추출. 단, 상수만 public을 준다.(변경되지않을것이니께)
     <값 주입>
     1. 생성자 통해서 -- 상속처럼 값이 변하지않는다.
     2. setter 메소드 통해서

@@ -9,6 +9,11 @@ public class PolyQuiz1 {
         Cat cat1 = new Cat();
         Duck duck1 = new Duck();
 
+        /*Animal ani = dog1;
+        ani = bd1;
+        ani = cat1;
+        ani = duck1;*/
+
         animalCryingCall(dog1);
         animalCryingCall(bd1);
         animalCryingCall(cat1);

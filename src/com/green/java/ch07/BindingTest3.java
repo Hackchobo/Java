@@ -21,7 +21,7 @@ class Parent3 {
 class Child3 extends Parent3 {
     private int x= 200;
 
-    void method(int x) {
+    void method(int x) {            // () 안에있는 걸 파라미터라고한다.
         System.out.println("x = " + x); //가장 가까운 x의 값을 가져온다.
         System.out.println("super.x = " +super.x); // 부모의 주소값 x 라는 뜻
         System.out.println("this.x = " + this.x); // 자식의 주소값 x 라는 뜻

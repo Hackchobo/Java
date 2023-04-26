@@ -21,6 +21,7 @@ class Parent2 {
 
 class Child2 extends Parent2{
     int x = 200;
+    @Override // 오버라이딩이맞는지 확인 해주는 작업임(실수방지용을 붙히면 확인가능)
     void method(){
         System.out.println("Child Method");
     }
