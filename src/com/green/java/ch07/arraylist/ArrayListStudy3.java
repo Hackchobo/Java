@@ -19,5 +19,7 @@ public class ArrayListStudy3 {
         System.out.println("removeValue : "+removeValue);
 
         System.out.println(list);
+
+        System.out.println(list.size()); // list.size() 값의 길이를 나타내준다.
     }
 }

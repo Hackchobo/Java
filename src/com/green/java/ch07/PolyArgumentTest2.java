@@ -14,18 +14,18 @@ public class PolyArgumentTest2 {
 class Buyer3 {
     private int money;
     private int bonusPoint;
-    private Product3[] items;
+    private Product3[] items; //배열은 범위가 정해져있고 더담으려면 배열한개더생성
     private int idx;
 
     Buyer3(){
         this.money = 1000;
         this.bonusPoint = 0;
-        this.items = new Product3[10];
+        this.items = new Product3[10]; // 배열은 10개밖에 저장을 하지 못한다.
         this.idx = 0;
         printState();
     }
 
-    public void buy(Product3 p){
+    public void buy(Product3 p){        // 로컬변수는 지역만 하고 죽는다.
 //        int productPrice = p.getPrice();
         for (int i = 0; i < items.length; i++) {
             if(items[i] == null){
@@ -36,21 +36,28 @@ class Buyer3 {
 //        money -= p.getPrice();
 //        bonusPoint += p.getBonusPoint();
 //        System.out.println(p.toString()+"을(를)"+p.getPrice()+"만원에 구매하였습니다.");
-            items[idx++] = p;
+            items[idx++] = p;       //최초는 0을 사용하고 다음에 할때는 1 그다음 2 이런식으로 된다.
             money -= p.getPrice();
             bonusPoint += p.getBonusPoint();
             System.out.println(p.toString()+"을(를)"+p.getPrice()+"만원에 구매하였습니다.");
     }
 
     public void summary() {
-        System.out.print("구입하신 제품은 ");
+        System.out.print("구입하신 제품은");
+        if(idx > 0 ){
+            System.out.printf("%s", items[0]);
+            for (int i = 0; i < idx; i++) {
+                System.out.printf(", %s", items[i]);
+            }
+        }
+        /*System.out.print("구입하신 제품은 ");
         for (int i = 0; i <idx ; i++) {
             if(i !=0) {
                 System.out.print(", ");
             }
             System.out.print(items[i]);
         }
-        System.out.printf(" 총 %,d개 입니다.",idx);
+        System.out.printf(" 총 %,d개 입니다.",idx);*/
 
     }
 
