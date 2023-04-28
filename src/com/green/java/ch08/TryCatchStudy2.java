@@ -1,4 +1,4 @@
-package com.green.java.ch8;
+package com.green.java.ch08;
 
 public class TryCatchStudy2 {
     public static void main(String[] args) {

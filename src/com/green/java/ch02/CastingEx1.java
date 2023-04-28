@@ -1,5 +1,5 @@
 package com.green.java.ch02;
-
+//p.75
 public class CastingEx1 {
     public static void main(String[] args) {
         double d = 85.4;

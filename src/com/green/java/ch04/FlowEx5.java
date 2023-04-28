@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FlowEx5 {
     public static void main(String[] args) {
         int score = 0;
-        char grade= ' ', opt = '0';
+        char grade= 'D', opt = '0';
 
         System.out.print("점수를 입력하세요 >");
         Scanner scan = new Scanner(System.in);
@@ -41,21 +41,25 @@ public class FlowEx5 {
         } else {
             grade = 'D';
         }*/
-        if (score >= 90){
-            grade = 'A';
-        } else if (score >=80) {
-            grade = 'B';
-        } else if (score >=70) {
-            grade = 'C';
-        } else {
-            grade = 'D';
-        }
-        if (score %10 >= 8){
-            opt ='+';
-        } else if (score %10 <4) {
-            opt ='-';
-        } else {
-            opt =' ';
+        if (score > 100 || score<0){
+            System.out.printf("점수는 0~100점 사이입니다.");
+        }else {
+            if (score >= 90){
+                grade = 'A';
+            } else if (score >=80) {
+                grade = 'B';
+            } else if (score >=70) {
+                grade = 'C';
+            } else {
+                grade = 'D';
+            }
+            if (score %10 >= 8){
+                opt ='+';
+            } else if (score %10 <4) {
+                opt ='-';
+            } else {
+                opt =' ';
+            }
         }
         System.out.printf("%d점의 학점은 %c%c입니다.",score,grade,opt);
     }

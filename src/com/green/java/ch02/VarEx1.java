@@ -6,9 +6,9 @@ public class VarEx1 {
         int age =14; // 변수명 age 타입은 int, 14값 대입(초기화)
 
         System.out.println(year); // 메소드
-        System.out.println(age);
+        System.out.println(age); // 값을 읽어 온다.
 
-        year= age + 2000;
+        year= age + 2000; // 대입연산자 이기때문에 값이 변할수있다.
         age = age +1;
 
         System.out.println(year);

@@ -10,8 +10,8 @@ public class PrintfEx1 {
         System.out.printf("b=%d\n", b);
         System.out.printf("s=%d%n", s);
         System.out.printf("c=%c, %d %n", c, (int)c);
-        System.out.printf("finger=[%5d] \n", finger);
-        System.out.printf("finger=[%-5d] \n", finger);
+        System.out.printf("finger=[%5d] \n", finger); // 오른쪽정렬
+        System.out.printf("finger=[%-5d] \n", finger); // 왼쪽정렬
         System.out.printf("finger=[%05d] \n", finger);
     }
 }

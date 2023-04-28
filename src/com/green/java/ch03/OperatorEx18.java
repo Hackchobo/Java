@@ -13,6 +13,6 @@ public class OperatorEx18 {
         System.out.println(Math.ceil(315.1));
         System.out.println(Math.floor(315.99999));
 
-        // round(올림), ceil(반올림), floor(버림)
+        // round(반올림), ceil(올림), floor(버림)
     }
 }
