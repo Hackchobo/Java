@@ -2,7 +2,7 @@ package com.green.java.ch05;
 
 public class ArrayStudy2 {
     public static void main(String[] args) {
-        int[] numArr = new int[5];
+        int[] numArr = new int[5]; // pro프라모티브타입은 디폴트값 0
 
         for (int i = 0; i < numArr.length; i++) {
             System.out.println(numArr[i]);
@@ -13,7 +13,7 @@ public class ArrayStudy2 {
             System.out.println(boolArr[i]);
         }
 
-        String[] strArr = new String[3];
+        String[] strArr = new String[3]; // String 타입은 디폴트값 null
         for (int i = 0; i < strArr.length; i++) {
             System.out.println(strArr[i]);
         }

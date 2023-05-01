@@ -5,6 +5,13 @@ public class ArrayStudy5 {
 
         int[] numArr = new int[] {10,20,30,40,50};
         int[] copyArr = new int[numArr.length];
+
+        for (int i = 0; i < copyArr.length; i++) {  // 딛카
+            copyArr[i] = numArr[i];
+        }
+
+        numArr[0] = 9;
+
         for (int i = 0; i < copyArr.length; i++) {
             System.out.printf("copuArr [%d] : %d\n", i , copyArr[i]);
         }
