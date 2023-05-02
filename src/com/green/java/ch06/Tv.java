@@ -9,6 +9,9 @@ public class Tv {  // 임의로정한 네임이지만 선언하는 순간 타입
     static String brand;
 
 
+    Tv() {
+        super();        //Object
+    }
 
 
     void power() { power = !power;} // 실행을 한번하였을때 true이다가 다시실행하면 false 다시실행하면 true

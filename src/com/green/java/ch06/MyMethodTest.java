@@ -14,6 +14,16 @@ public class MyMethodTest {
         int result =mm.sum2(10,245);
         System.out.println("result : "+result); //S .out .prin > chainnig 체이닝 기법이라고 한다.
 
+        String str = " a_b_다_라_마바 ";
+        String r1 = str.trim().replace("_","*").toUpperCase();
+        System.out.println(r1);
+
+        "a_b_다_라_마바".replace("_","*");
+
+        String r2 = "a*b*다*라*마바".toUpperCase();
+        System.out.println(r2);
+
+
         PrintStream ps = System.out; // PrintStream 객체만 담을수있다.
         //System.out = null;
         ps.println("result2 : " + result);

@@ -10,15 +10,16 @@ public class TvTest4_1 {
             tvArr[i].channel =10;
         }
 
-        tvArr[0].channel =1;
+        tv.channel = 1;
         System.out.println(tvArr[0].channel);
-        System.out.printf("%d",tvArr[1].channel);
+        System.out.println(tvArr[1].channel);
+        System.out.println(tvArr[2].channel);
+        System.out.printf("%d\n",tvArr[1].channel);
 
         String str = "dd";
         for (int i = 0; i < tvArr.length; i++) {
-            System.out.println();
+            System.out.println(tvArr[i]);
         }
-
-
+        System.out.println(tv);
     }
 }

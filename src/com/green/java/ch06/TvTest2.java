@@ -9,7 +9,7 @@ public class TvTest2 {
         }
         System.out.printf("channel : %d\n", tv.channel);
 
-        for (int i = 5; i > -3 ; i--) {
+        for (int i = 0; i < 100 ; i++) {
             tv.channelDown();
         }
 
@@ -22,13 +22,13 @@ class Tv2{
     boolean power;
     int channel;
 
-    final int MAX_CHANNER = 5;
+    final int MAX_CHANNER = 5;  // 매직 넘버를 사용하여 바뀔때 안전하게 해준다.
     final int MIN_CHANNER = 1;
     void power() { power = !power;} // 실행을 한번하였을때 true이다가 다시실행하면 false 다시실행하면 true
     void setChannelUP() {
-        if (channel<MAX_CHANNER){
-            channel++;
-        }
+        if (channel<MAX_CHANNER){return; }
+        channel++;
+
     }
     void channelDown(){
         if (channel>MIN_CHANNER){

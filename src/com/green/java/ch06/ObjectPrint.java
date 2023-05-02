@@ -7,7 +7,7 @@ public class ObjectPrint {
 
         ValueBox vb = new ValueBox();
         vb.num = 10;
-        System.out.println(vb);
+        System.out.println(vb.toString());
 
     }
 }
