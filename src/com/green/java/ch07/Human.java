@@ -5,9 +5,9 @@ public class Human {
     private int age;
     private String job;
 
-    public Human() {
-        super(); // 부모생성자에 기본생성자 호출
-    }
+//    public Human() {
+//        super(); // 부모생성자에 기본생성자 호출
+//    }
 
     public Human(String name, int age, String job) {
         this.name = name;

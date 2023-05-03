@@ -33,9 +33,20 @@ public class CardDeck {
         }
     }
 
+    public void showSize(){
+        System.out.println(cardList.size());
+    }
+
+    public Card getCard() {
+        int rIdx=(int)(Math.random()* this.cardList.size());
+        return this.cardList.remove(rIdx);
+    }
+
     public void openCard() {
         for(Card c : cardList){
             System.out.println(c);
         }
     }
+
+
 }

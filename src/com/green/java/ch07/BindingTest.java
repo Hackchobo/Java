@@ -2,11 +2,13 @@ package com.green.java.ch07;
 
 public class BindingTest {
     public static void main(String[] args) {
-        Parent2 p = new Child2();
+        Parent2 p = new Child2(); //메소드 입장에서는 타입은 담을수있는지 없는지만 결정
         Child2 c = new Child2();
 
         System.out.println(p.x);
+        p.method();
         System.out.println(c.x);
+        c.method();
 
         // 메소드는 객체기중이라서 자식부터 찾고 그다음에 부모필드를 찾아간다.
     }

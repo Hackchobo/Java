@@ -7,6 +7,6 @@ public class CastingTest2 {
         FireCar fc = null;
 
         car.drive();
-        fc = (FireCar) car; // 자식타입은 부모 객체 주소값 저장할 수 없다.
+        // fc = (FireCar) car; // 자식타입은 부모 객체 주소값 저장할 수 없다.
     }
 }

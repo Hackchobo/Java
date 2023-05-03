@@ -69,6 +69,7 @@ class Computer extends Product{
     public Computer(){
         super(200);
     }       // 생성자와 메소드와 다른점은  생성자는 1. 리턴타입이 없다. 2.클래스명이랑 똑같다.
+    @Override
     public String toString(){       // 주소값과 클래스명 안에있는 오버라이딩 이다.
         return "Computer";
     }  // 오버라이딩 Object를 오버라이딩 하였다.

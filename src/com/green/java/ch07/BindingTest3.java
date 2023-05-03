@@ -6,6 +6,7 @@ public class BindingTest3 {
         Child3 c = new Child3();
 
         p.method();
+        c.method();
         c.method(5);
 
     }
@@ -20,6 +21,11 @@ class Parent3 {
 
 class Child3 extends Parent3 {
     private int x= 200;
+    void method(){
+        super.method();
+        System.out.println("Child Method");
+
+    }
 
     void method(int x) {            // () 안에있는 걸 파라미터라고한다.
         System.out.println("x = " + x); //가장 가까운 x의 값을 가져온다.
