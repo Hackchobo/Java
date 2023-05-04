@@ -1,6 +1,7 @@
 package com.green.java.ch07.arraylist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListStudy2 {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class ArrayListStudy2 {
         double d = 10.2;
         Double d2 = d;
         // <>를 제네릭이라고 한다. <타입> - 타입을 고정시켜서 타입에 맞는것만 나온다.
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
 //        list.add("11");
 //        list.add(10.1);
 //        list.add(true);

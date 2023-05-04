@@ -14,8 +14,8 @@ public class PolyQuiz1 {
         ani = cat1;
         ani = duck1;*/
 
-        animalCryingCall(dog1);
-        animalCryingCall(bd1);
+        PolyQuiz1.animalCryingCall(dog1);
+        PolyQuiz1.animalCryingCall(bd1);
         animalCryingCall(cat1);
         animalCryingCall(duck1);
 

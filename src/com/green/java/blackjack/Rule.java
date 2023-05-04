@@ -4,7 +4,10 @@ import java.util.List;
 
 public class Rule {
 
-    public int getScore(List<Card> cardList) {
+    static final int BLACKJACK_SCORE = 21;
+
+
+    public static int getScore(List<Card> cardList) {
         int sum = 0;
         for (Card c : cardList) {
             sum += getDenominationToNum(c);
@@ -12,7 +15,7 @@ public class Rule {
         return sum;
     }
 
-    private int getDenominationToNum(Card c){
+    private static int getDenominationToNum(Card c){
         switch (c.getDenomination()){
             case "A" :return 1;
             case "J" :
@@ -22,5 +25,25 @@ public class Rule {
             default:
                 return Integer.parseInt(c.getDenomination());
         }
+    }
+
+    public static void whoIsWin(Gamer gamer, Dealer dealer) {
+        int gPoint = gamer.getPointSum();
+        int dPoint = dealer.getPointSum();
+
+        if (gPoint <= BLACKJACK_SCORE && (gPoint>dPoint || dPoint>BLACKJACK_SCORE)){
+            System.out.println("게이머 승리");
+        }else if(dPoint<= BLACKJACK_SCORE && (gPoint>dPoint || dPoint>BLACKJACK_SCORE)){
+            System.out.println("딜러 승리");
+        }else {
+            System.out.println("무승부");
+        }
+        /*if (gPoint > dPoint){
+            System.out.println("딜러승");
+        } else if (gPoint < dPoint) {
+            System.out.println("게이머승");
+        }else {
+            System.out.println("비겼습니다.");
+        }*/
     }
 }

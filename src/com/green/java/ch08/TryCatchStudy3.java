@@ -12,8 +12,11 @@ public class TryCatchStudy3 {
             r = n1/n2;
 
             if(r % 2==0){return 100;}
-        } catch (Exception e){
-            e.printStackTrace();
+        } catch (ArithmeticException | NumberFormatException e2) {
+            //multi catch block
+
+        }catch (Exception e2){
+            e2.printStackTrace();
         } finally {
             System.out.println("파이널리");
         }

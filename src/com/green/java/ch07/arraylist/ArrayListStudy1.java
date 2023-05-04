@@ -1,10 +1,12 @@
 package com.green.java.ch07.arraylist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListStudy1 {
     public static void main(String[] args) {
-        ArrayList list = new ArrayList(); // 대괄호 안씀, 값이 아무거나 다들어 간다. 오브젝트타입은 숫자도가능하고 뭐든 가능하다.
+        List list = new ArrayList();
+       // ArrayList list = new ArrayList(); // 대괄호 안씀, 값이 아무거나 다들어 간다. 오브젝트타입은 숫자도가능하고 뭐든 가능하다.
         // ArrayList 를 사용할때는 ArrayList = new ArrayList();라고 객체화를 해주어야 한다.
         // 단점 : 받는 타입이 Object이다. -> 값을 사용할때 정확하게 빼주어야된다.
         list.add(10); //0번방

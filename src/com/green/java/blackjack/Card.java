@@ -18,7 +18,8 @@ public class Card {
 
     @Override
     public String toString(){
-        return pattern+" "+denomination;
+        return String.format("Card { %s, %s}",this.pattern,this.denomination);
+//        return pattern+", "+denomination;
     }
 }
 

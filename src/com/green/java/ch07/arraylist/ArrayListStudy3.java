@@ -12,7 +12,7 @@ public class ArrayListStudy3 {
 
         list.add(1,100);
         System.out.println(list);
-        list.add(0,300);
+        list.add(4,300);
         System.out.println(list);
 
         int removeValue = list.remove(4); // list.remove(4) 4번방을 지우고, 값을 리턴한다.
