@@ -23,9 +23,9 @@ public class BlackjackTest {
 
         Scanner scan = new Scanner(System.in);
             while (true){
-                System.out.println("Card More? (y/n) >");
+                System.out.println("Card More? (y/n) >");              // -- 한번더할지 물어보는 구문
                 String answer= scan.nextLine();
-                if("n".equals(answer.trim().toLowerCase())){break;}
+                if("n".equals(answer.trim().toLowerCase())){break;}     // -- "n"이 나올경우 브레이크가 되는 구문
                 gamer.receiveCard(cd.getCard());
                 gamer.showCards();
             }
