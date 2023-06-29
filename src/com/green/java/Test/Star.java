@@ -1,4 +1,4 @@
-package com.green.java.Test;
+package com.green.java.test;
 
 public class Star {
     public static void main(String[] args) {

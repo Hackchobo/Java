@@ -1,4 +1,4 @@
-package com.green.java.Test;
+package com.green.java.test;
 
 /*
     번호 국어 영어 수학 총점 평균

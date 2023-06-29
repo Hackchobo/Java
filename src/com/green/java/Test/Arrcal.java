@@ -1,4 +1,4 @@
-package com.green.java.Test;
+package com.green.java.test;
 
 import java.util.Arrays;
 
