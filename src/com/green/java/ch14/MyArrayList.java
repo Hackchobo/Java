@@ -13,6 +13,11 @@ interface MyPredicate {
     boolean test(int num);
 }
 
+@FunctionalInterface
+interface MyFunction2 {
+    int apply(int p);
+}
+
 public class MyArrayList {
     private int[] arr;
 
@@ -35,7 +40,104 @@ public class MyArrayList {
     }
 
     public MyArrayList filter(MyPredicate predicate) {
-        return null;
+        MyArrayList list = new MyArrayList();
+        for (int i = 0; i < arr.length; i++) {
+            if (predicate.test(arr[i])){
+                list.add(arr[i]);
+            }
+        }
+        return list;
+    }
+
+    public MyArrayList map(MyFunction2 function2) {
+        MyArrayList list = new MyArrayList();
+        for (int i = 0; i < this.arr.length; i++) {
+            list.add(function2.apply(arr[i]));
+        }
+        return list;
+    }
+
+    public void removeIf(MyPredicate predicate){
+        //false로 넘어오는거 살리자.
+        int idx = 0;
+        int[] temp = new int[this.arr.length];
+        for (int i = 0; i < this.arr.length; i++) {
+            if (!predicate.test(this.arr[i])) {
+                temp[idx] = this.arr[i];
+                idx++;
+            }
+        }
+
+        int[] temp2 = new int[idx];
+        for (int i = 0; i < temp2.length; i++) {
+            temp2[i] = temp[i];
+        }
+        this.arr = temp2;
+        /*int idx = 0;
+        int[] temp = new int[this.arr.length];
+        for (int i = 0; i < this.arr.length; i++) {
+            if(!predicate.test(this.arr[i])){
+                temp[idx] = this.arr[i];
+                idx++;
+            }
+        }
+
+        int[] temp2 = new int[idx];
+        for (int i = 0; i < temp2.length; i++) {
+            temp2[i] = temp[i];
+        }
+        this.arr = temp2;*/
+        /*int idx = 0;
+        int[] temp = new int[this.arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            if (!predicate.test(arr[i])){
+                temp[idx] = this.arr[i];
+                idx++;
+            }
+        }
+
+        int[] temp2 = new int[idx];
+        for (int i = 0; i < temp2.length; i++) {
+            temp2[i] = temp[i];
+        }
+        this.arr = temp2;*/
+
+        /*int idx = 0;
+        int[] temp = new int[this.arr.length];
+        for (int i = 0; i < this.arr.length; i++) {
+            if (predicate.test(this.arr[i])){
+                temp[idx] = this.arr[i];
+                idx++;
+            }
+        }
+
+        int[] temp2 = new int[idx];
+        for (int i = 0; i < temp2.length; i++) {
+            temp2[i] = temp[i];
+        }
+        this.arr = temp2;*/
+
+        /*int idx = 0;
+        int[] temp = new int[this.arr.length];
+        for (int i = 0; i < this.arr.length; i++) {
+            int val = this.arr[i];
+            boolean b = predicate.test(val);
+            if(b == false){
+                temp[idx] = val;
+                idx++;
+            }
+        }
+        int[] temp2 = new int[idx];
+        for (int i = 0; i < temp2.length; i++) {
+            temp2[i] = temp[i];
+        }
+        this.arr = temp2;*/
+    }
+
+    public void replaceAll(MyFunction2 fn) {
+        for (int i = 0; i < this.arr.length; i++) {
+                this.arr[i] = fn.apply(this.arr[i]);
+        }
     }
 
     @Override
@@ -49,6 +151,10 @@ public class MyArrayList {
         sb.append("]");
         return sb.toString();
     }
+
+
+
+
 
 
    /* public MyArrayList() {
