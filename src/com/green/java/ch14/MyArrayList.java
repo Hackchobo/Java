@@ -24,6 +24,9 @@ public class MyArrayList {
     public MyArrayList(){
         this.arr = new int[0];
     }
+
+
+
     public void add(int num){
         int[] temp = new int[arr.length+1];
         temp[arr.length] = num;
@@ -138,6 +141,15 @@ public class MyArrayList {
         for (int i = 0; i < this.arr.length; i++) {
                 this.arr[i] = fn.apply(this.arr[i]);
         }
+    }
+
+
+    public static MyArrayList asList(int... num){
+        MyArrayList list = new MyArrayList();
+        for (int i = 0; i < num.length; i++) {
+            list.add(num[i]);
+        }
+        return list;
     }
 
     @Override

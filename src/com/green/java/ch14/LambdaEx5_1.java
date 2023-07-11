@@ -24,9 +24,6 @@ public class LambdaEx5_1 {
         List<Integer> newList2 = doSomething2(f, list);
         System.out.println(newList2);
 
-        LocalDate date = LocalDate.now();
-        System.out.println(); // date.getMonthValue() 월
-
     }
 
     public static void makeRandomList(Supplier<Integer> supplier, List<Integer> list){
